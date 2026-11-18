@@ -218,4 +218,4 @@ docker build -t ai-incident-intelligence . && docker run -p 8000:8000 -v inciden
 
 ## License
 
-No license file is included yet. Add one before you accept contributions.
+[MIT](LICENSE).
