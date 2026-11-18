@@ -1,0 +1,37 @@
+[
+  {
+    "id": "payments",
+    "label": "Payment processing failures",
+    "title": "Payment processing failing",
+    "service": "payments-api",
+    "description": "Payment processing is failing for multiple customers. Transactions are timing out, and several customers have reported duplicate payment attempts. The issue started approximately 15 minutes ago."
+  },
+  {
+    "id": "login-slow",
+    "label": "Slow logins after a release",
+    "title": "Login latency after release",
+    "service": "auth-service",
+    "description": "Since this morning's release, login requests take 8-12 seconds for some users. Most logins eventually succeed. Auth service CPU is around 70% and support has received a handful of complaints."
+  },
+  {
+    "id": "db-down",
+    "label": "Primary database unreachable",
+    "title": "Orders database unreachable",
+    "service": "orders-db",
+    "description": "The primary orders database stopped accepting connections at 02:14 UTC. The application returns 500 errors on every order page and the replica shows increasing replication lag."
+  },
+  {
+    "id": "memory-leak",
+    "label": "Memory growth in a worker",
+    "title": "Worker memory leak",
+    "service": "report-worker",
+    "description": "The report generation worker memory climbs steadily and the pods are restarted by the orchestrator roughly every two hours. Reports are delayed but eventually complete."
+  },
+  {
+    "id": "typo",
+    "label": "Cosmetic UI issue",
+    "title": "Misaligned footer link",
+    "service": "web-frontend",
+    "description": "There is a minor alignment issue with the footer links on the pricing page on small screens, and a typo in the 'Contact us' text. No functionality is affected."
+  }
+]
